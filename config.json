@@ -1,0 +1,43 @@
+{
+  "_comentario": "Configuración del piloto SECOP Radar para Gmas Lab. Ajusta libremente palabras clave y códigos UNSPSC.",
+
+  "palabras_clave": [
+    "difracción de rayos X",
+    "fluorescencia de rayos X",
+    "microscopía electrónica de barrido",
+    "cartografía geológica",
+    "geofísica",
+    "sísmica",
+    "petrofísica",
+    "petrografía",
+    "geoquímica",
+    "geotecnia",
+    "caracterización geológica",
+    "laboratorio de suelos",
+    "ensayos de laboratorio geotécnico",
+    "consultoría geológica",
+    "exploración geofísica"
+  ],
+
+  "prefijos_unspsc": [
+    "V1.8115",
+    "V1.8011",
+    "V1.4111",
+    "V1.8110"
+  ],
+
+  "_nota_unspsc": "Estos prefijos se identificaron probando la API en vivo (segmento 81 = servicios científicos/profesionales, familia 8115 = ciencias geológicas, 4111 = equipo e instrumentos científicos/laboratorio). Verifica y refina con el buscador oficial: https://www.colombiacompra.gov.co/secop/consulta-codigo-unspsc",
+
+  "dias_hacia_atras": 5,
+  "excluir_estados": ["Cancelado"],
+  "limite_por_consulta": 20,
+
+  "dataset_id": "p6dx-8zbt",
+  "dataset_nombre": "SECOP II - Procesos de Contratación",
+
+  "canal_alertas": {
+    "tipo": "telegram",
+    "bot_token_env": "TELEGRAM_BOT_TOKEN",
+    "chat_id_env": "TELEGRAM_CHAT_ID"
+  }
+}
