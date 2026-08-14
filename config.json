@@ -1,23 +1,5 @@
 {
-  "_comentario": "Configuración del piloto SECOP Radar para Gmas Lab. Ajusta libremente palabras clave y códigos UNSPSC.",
-
-  "palabras_clave": [
-    "difracción de rayos X",
-    "fluorescencia de rayos X",
-    "microscopía electrónica de barrido",
-    "cartografía geológica",
-    "geofísica",
-    "sísmica",
-    "petrofísica",
-    "petrografía",
-    "geoquímica",
-    "geotecnia",
-    "caracterización geológica",
-    "laboratorio de suelos",
-    "ensayos de laboratorio geotécnico",
-    "consultoría geológica",
-    "exploración geofísica"
-  ],
+  "_comentario": "Configuración general de SECOP Radar (multi-cliente). Las palabras clave de cada cliente viven en clientes/<cliente>/palabras_clave.txt — este archivo es solo la parte compartida por todos.",
 
   "prefijos_unspsc": [
     "V1.8115",
@@ -25,19 +7,33 @@
     "V1.4111",
     "V1.8110"
   ],
+  "_nota_unspsc": "Estos prefijos se identificaron probando la API en vivo (segmento 81 = servicios científicos/profesionales, familia 8115 = ciencias geológicas, 4111 = equipo e instrumentos científicos/laboratorio). Se aplican a todos los clientes. Verifica y refina con el buscador oficial: https://www.colombiacompra.gov.co/secop/consulta-codigo-unspsc",
 
-  "_nota_unspsc": "Estos prefijos se identificaron probando la API en vivo (segmento 81 = servicios científicos/profesionales, familia 8115 = ciencias geológicas, 4111 = equipo e instrumentos científicos/laboratorio). Verifica y refina con el buscador oficial: https://www.colombiacompra.gov.co/secop/consulta-codigo-unspsc",
-
-  "dias_hacia_atras": 5,
+  "dias_hacia_atras": 2,
   "excluir_estados": ["Cancelado"],
   "limite_por_consulta": 20,
 
   "dataset_id": "p6dx-8zbt",
   "dataset_nombre": "SECOP II - Procesos de Contratación",
 
-  "canal_alertas": {
-    "tipo": "telegram",
+  "correo": {
+    "activar": true,
+    "asunto_prefijo": "SECOP Radar",
+    "enviar_aunque_no_haya_nuevas": false
+  },
+
+  "canal_telegram": {
+    "activar": true,
     "bot_token_env": "TELEGRAM_BOT_TOKEN",
     "chat_id_env": "TELEGRAM_CHAT_ID"
+  },
+
+  "top_valor_por_departamento": {
+    "_comentario": "El Top 10 diario de las licitaciones más grandes en dinero, dentro de cada departamento, sin filtrar por palabra clave (aplica a cualquier servicio).",
+    "dias_hacia_atras": 2,
+    "limite_por_departamento": 10,
+    "excluir_estados": ["Cancelado"],
+    "valor_minimo": 1,
+    "archivo_departamentos": "departamentos.json"
   }
 }
