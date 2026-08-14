@@ -1,7 +1,0 @@
-# Palabras clave de este cliente — una por línea.
-# Las líneas que empiezan con # son comentarios y se ignoran.
-#
-# Ejemplos (bórralos y pon los del cliente real):
-# interventoría de obra civil
-# construcción de vías terciarias
-# consultoría ambiental
