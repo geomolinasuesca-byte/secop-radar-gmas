@@ -31,3 +31,6 @@ análisis granulométrico
 perforación exploratoria
 Cromatografía de Gases
 Petroleos
+Petroleo
+Núcleos de perforación
+Gamma Ray
