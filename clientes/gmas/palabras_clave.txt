@@ -1,0 +1,38 @@
+# === Palabras clave de Gmas para SECOP Radar ===
+# Agrega o quita una palabra/frase por línea. Así de simple.
+# Las líneas que empiezan con # son comentarios y se ignoran.
+# Después de editar y darle "Commit changes" en GitHub, el radar las usa
+# automáticamente en la siguiente corrida (no hay que tocar ningún otro archivo).
+
+difracción de rayos X
+fluorescencia de rayos X
+microscopía electrónica de barrido
+cartografía geológica
+geofísica
+sísmica
+petrofísica
+petrografía
+geoquímica
+geotecnia
+caracterización geológica
+laboratorio de suelos
+ensayos de laboratorio geotécnico
+consultoría geológica
+exploración geofísica
+hidrogeología
+estudios ambientales
+mecánica de suelos
+análisis mineralógico
+muestreo geológico
+sondeos geotécnicos
+exploración minera
+ensayos de materiales
+análisis granulométrico
+perforación exploratoria
+DRX
+XRD
+FRX
+Cromatografía de Gases
+Hidrocarburos
+Petroleo
+Rocas
